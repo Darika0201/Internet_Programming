@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;  
+}
+a{
+    text-decoration: none;
+    color: black;  
+}
+a:hover{ color: blue; }
+header{ background-color: #ffffff;}
+
+/* Header */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+}
+.MyPage{
+    color: #14274e;
+    font-family: cursive;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.MyPage span{ color: green; }
+.help{
+    margin: auto 0;
+    font-size: 1.2rem;
+}
+.help a{ margin-left: 16px; }
+.help a img{
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}
+.help a:last-child{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 9px;
+    box-shadow: 1px 1px 2px grey;
+    background-color: white;
+}
+#page{
+    text-align: center;
+    font-size: 1rem;
+    padding: 4rem 0 5rem 0;
+    background-image: url(../Assets/Cloths-bc740630f228713e4bb0de8a7bffce22.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#page h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #373a40;
+}
+#page p{
+    font-size: 1rem;
+    color: #686d76;
+}
+.search{ padding: 5px 0 5px 50px; }
+.search input{
+    width: 30%;
+    height: 2em;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 1rem;
+}
+.search input:focus{ outline: none; }
+.search button{
+    position: relative;
+    top: 4px;
+    right: 50px;
+    width: 40px;
+    height: 100%;
+    background: none;
+    border: none;
+    border-left: 1px solid;
+    border-radius: 0;
+}
+
+/* Body */
+.MYcoupon{ margin: 3rem 10%; }
+hr{ width: 90%; }
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    width: 100%;
+    background-color: red;
+    padding: 15px;
+    margin-right: 15px;
+    color: #14274e;
+    border-radius: 15px;
+    border: 1px solid #14274e;
+}
+.card h5{
+    font-size: 1.2rem;
+    line-height: 1;
+}
+.card p{
+    font-size: .85rem;
+    font-weight: 500;
+}
+.card1{ background-color: #ffd5cd; }
+.card2{ background-color: #f5a25d; }
+.card3{ background-color: #c060a1; }
+.card img{
+    float: right;
+    margin: 2rem 0;
+}
+.card button{
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+}
+.card button:hover{ background-color: blue; }
+.Myproducts_row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 8%;
+    margin-top: 3rem;
+}
+.col1{ width: 25%; }
+.col2{
+    width: 75%;
+    background-color: #eeeded;
+    padding: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.product_img{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.col1 a img{
+    width: 35px;
+    height: 35px;
+}
+.col1 a{
+    display: flex;
+    padding: 5px;
+}
+.col1 h3{
+    line-height: .5;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.shop_cart{
+    position: relative;
+    font-size: 1rem;
+}
+.shop_cart img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+.flex_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price p{line-height: .5; }
+.price p:first-child{
+    text-decoration: line-through;
+    color : red;
+}
+.price p:last-child{ color: green;}
+.flex_price a{
+    margin: auto 0;
+    padding: 5px;
+    border: 1px solid;
+    box-shadow: 1 px 1px 5px grey;
+    border-radius: 5px;
+}
+.flex_price a:hover{ color: blue; }
+.flex_price span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.flex_price a img{
+    float: left;
+    width: 20px;
+    margin-right: 5px;
+}
+.loadMore{
+    margin: 2rem auto;
+    display: block;
+    padding: 10px;
+    background-color: #a8dda8;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media (max-width: 900px){
+    .grid{
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px){
+    .grid{
+      grid-template-columns: 1fr;
+    }
+}
+  
